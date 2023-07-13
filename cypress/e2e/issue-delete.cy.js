@@ -17,7 +17,7 @@ describe('Issue deleting', () => {
     const confirm = '[data-testid="modal:confirm"]'
     
 
-    it.skip('Should delete an issue', () => {
+    it('Should delete an issue', () => {
         //System finds modal for creating issue and does next steps inside of it
         cy.get(listissue).contains(task)
           cy.wait(2000)
