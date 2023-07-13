@@ -131,8 +131,8 @@ it('Should validate title as a required field if missing', () => {
 
 it('Should create an issue and validate it successfully using faker', () => {
   // System finds modal for creating an issue and performs the next steps inside it
-  var desc=faker.lorem.lines(2);
-  var name=faker.lorem.word(5)
+  var desc = faker.lorem.lines(2);
+  var name = faker.lorem.word(5)
   cy.visit("https://jira.ivorreic.com/project/board?modal-issue-create=true")
   cy.wait(4000)
   cy.get('[data-testid="icon:plus"]').trigger("mouseover").click()
